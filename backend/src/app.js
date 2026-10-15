@@ -1,6 +1,7 @@
 import express from 'express';
 import condominiumRoutes from './modules/condominium/condominium.routes.js';
 import personRoutes from './modules/person/person.routes.js';
+import userRoutes from './modules/user/user.routes.js';
 import errorHandler from './middleware/errorHandler.js';
 
 const app = express();
@@ -14,6 +15,7 @@ app.get('/api/health', (req, res) => {
 
 app.use('/api/condominiums', condominiumRoutes);
 app.use('/api/persons', personRoutes);
+app.use('/api/users', userRoutes);
 
 
 

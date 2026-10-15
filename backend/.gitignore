@@ -18,3 +18,7 @@ coverage/
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Editor 
+.vscode/
+!.vscode/extensions.json
